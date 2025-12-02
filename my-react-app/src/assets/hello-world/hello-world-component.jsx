@@ -2,17 +2,38 @@ import React from "react";
 import styled from "styled-components";
 import Form from "./Form.jsx";
 const HelloWorldStyle = styled.div`
-  background-color: green;
-  .element {
-    color: red;
+   .parent {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    //align-items: flex-start;
+    // align-items: center;
+    // align-items: flex-start;
+    //justify-content: flex-end;
+    align-items: flex-end;
+    //justify-content: space-evenly;
+    //justify-content: space-between;
+    //  justify-content: space-around;
+    gap: 20px;
+    height: 100vh;
+  }
+  .square__child {
+    width: 50px;
+    height: 50px;
+    background-color: red;
   }
 `;
-const HelloWorld = () => {
+const HelloWorldComponent = () => {
   return (
-    <div style={{display : "flex",justifyContent:"center",alignItems:"center",height: "100vh",width: "100vw"}}>
-      <Form/>
-    </div>
+    <HelloWorldStyle>
+      {/* <h1 className="element">Sri eshwar</h1> */}
+      <div className="parent">
+        <div className="square__child"></div>
+        <div className="square__child"></div>
+        <div className="square__child"></div>
+        <div className="square__child"></div>
+      </div>
+    </HelloWorldStyle>
   );
 };
-
-export default HelloWorld;
+export default HelloWorldComponent;
