@@ -18,9 +18,10 @@ const HelloWorldStyle = styled.div`
     height: 100vh;
   }
   .square__child {
-    width: 50px;
+    width: 100px;
     height: 50px;
     background-color: red;
+    border-radius: 100px;
   }
 `;
 const HelloWorldComponent = () => {
