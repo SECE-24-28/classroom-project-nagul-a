@@ -5,6 +5,7 @@ import Position from "./assets/position-styles/position";
 import TrustedbyComponent from "./assets/trusted-by/trusted";
 import Touch from "./assets/touch/touch";
 import Impact from "./assets/impact/impact";
+import Promise from "./assets/promise/promise";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <ExcellenceBox />
       <Box />
       <Position />
-      <Touch/> */}
+      <Touch/>*/}
       <Impact/>
+      <Promise/>
     </div>
   );
 }
