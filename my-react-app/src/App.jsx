@@ -8,6 +8,10 @@ import FourOFourComponent from "./assets/404-component/404-component";
 import UseStateComponent from "./assets/usestate-1st/use-state";
 import UsestateformComponent from "./assets/use-state-form/use-state-form";
 import AddOperation from "./assets/addition-operation-component/addition-operation";
+import RegisterForm from "./assets/Registration/Registration-form";
+import UseEffectComponent from "./use-effect-practice/use-effect-practice";
+import UseEffectPracticeTwo from "./use-effect-practice/use-effect-practice-2";
+import UseEffectPracticeThree from "./use-effect-practice/use-effect-practice-3";
 
 function App() {
   return (
@@ -22,6 +26,18 @@ function App() {
         <Route path="/use-state-form" element={<UsestateformComponent />} />
         <Route path="/addition-operation" element={<AddOperation />} />
         {/* <Route path=""/> */}
+
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="/use-effect" element={<UseEffectComponent />} />
+        <Route path="/use-effect-practice" element={<UseEffectComponent />} />
+        <Route
+          path="/use-effect-practice-2"
+          element={<UseEffectPracticeTwo />}
+        />
+        <Route
+          path="use-effect-practice-3"
+          element={<UseEffectPracticeThree />}
+        />
       </Routes>
     </div>
   );
